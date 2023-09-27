@@ -3,15 +3,23 @@ import { FaLocationDot, FaEnvelope, FaCalendarDays, FaLinkedin, FaGithub } from 
 const Contact = () => {
 
   return (
-    <main className="contact">
+    <section className="contact">
+      <span id="contact" className="sr-only link">
+        Link to Contact
+      </span>
       <div className="wrapper">
-        <h1 className="section__heading">Contact <span>Me</span></h1>
-        <h2 className="section__heading--bg">Contact</h2>
+        <h2 className="section__heading">
+          Contact <span>Me</span>
+        </h2>
+        <span className="section__heading--bg">Contact</span>
         <div className="contact__container">
           <div className="contact__container--left">
             <h3>Let's Connect!</h3>
             <p>
-              Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be a part of your visions. I'm also available for a casual chat over coffee or drink!
+              Feel free to get in touch with me. I am always open to discussing
+              new projects, creative ideas or opportunities to be a part of your
+              visions. I'm also available for a casual chat over coffee or
+              drink!
             </p>
             <address>
               <FaLocationDot className="contact__icon" />
@@ -64,7 +72,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </main>
+    </section>
   );
 };
 

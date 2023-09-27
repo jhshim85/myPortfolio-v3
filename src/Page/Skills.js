@@ -31,12 +31,15 @@ import {
 const Skills = () => {
   
   return (
-    <main className="skills">
+    <section className="skills">
+      <span id="skills" className="sr-only link">
+        Link to Skills
+      </span>
       <div className="wrapper">
-        <h1 className="section__heading">
+        <h2 className="section__heading">
           My <span>Skills</span>
-        </h1>
-        <h2 className="section__heading--bg">Skills</h2>
+        </h2>
+        <span className="section__heading--bg">Skills</span>
         <div className="skills__container">
           <div className="skills__container--tech">
             <ul className="skills__list--tech">
@@ -188,7 +191,7 @@ const Skills = () => {
           </div>
         </div>
       </div>
-    </main>
+    </section>
   );
 }
 

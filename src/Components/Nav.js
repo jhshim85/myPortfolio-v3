@@ -20,27 +20,27 @@ const Nav = () => {
   };
 
   const location = useLocation();
-  const {pathname} = location;
-  const splitLocation = pathname.split("/");
+  const {hash} = location;
+  const splitLocation = hash.split("#");
 
   return (
     <div className="menu__container">
       <ul className="menu__main">
         <li>
-          <Link to="/" className="menu__main--list">
+          <a href="/#home" className="menu__main--list">
             <h4 className="menu__main--item">Home</h4>
             <FontAwesomeIcon
               icon={faHome}
               className={
-                splitLocation[1] === ""
+                splitLocation[1] === "home"
                   ? "menu__main--active"
                   : "menu__main--icon"
               }
             />
-          </Link>
+          </a>
         </li>
         <li>
-          <Link to="/about" className="menu__main--list">
+          <a href="/#about" className="menu__main--list">
             <h4 className="menu__main--item">About</h4>
             <FontAwesomeIcon
               icon={faUser}
@@ -50,10 +50,10 @@ const Nav = () => {
                   : "menu__main--icon"
               }
             />
-          </Link>
+          </a>
         </li>
         <li>
-          <Link to="/skills" className="menu__main--list">
+          <a href="/#skills" className="menu__main--list">
             <h4 className="menu__main--item">Skills</h4>
             <FontAwesomeIcon
               icon={faScrewdriverWrench}
@@ -63,10 +63,10 @@ const Nav = () => {
                   : "menu__main--icon"
               }
             />
-          </Link>
+          </a>
         </li>
         <li>
-          <Link to="/projects" className="menu__main--list">
+          <a href="/#projects" className="menu__main--list">
             <h4 className="menu__main--item">Projects</h4>
             <FontAwesomeIcon
               icon={faPanorama}
@@ -76,10 +76,10 @@ const Nav = () => {
                   : "menu__main--icon"
               }
             />
-          </Link>
+          </a>
         </li>
         <li>
-          <Link to="/contact" className="menu__main--list">
+          <a href="/#contact" className="menu__main--list">
             <h4 className="menu__main--item">Contact</h4>
             <FontAwesomeIcon
               icon={faEnvelopeOpen}
@@ -89,7 +89,7 @@ const Nav = () => {
                   : "menu__main--icon"
               }
             />
-          </Link>
+          </a>
         </li>
       </ul>
       <div className="menu__slide">
@@ -105,20 +105,20 @@ const Nav = () => {
         </p>
         <ul className={clicked}>
           <li>
-            <Link to="/" className="menu__slide--list">
+            <a href="/#home" className="menu__slide--list">
               <FontAwesomeIcon
                 icon={faHome}
                 className={
-                  splitLocation[1] === ""
+                  splitLocation[1] === "home"
                     ? "menu__slide--active"
                     : "menu__slide--icon"
                 }
                 title="Home"
               />
-            </Link>
+            </a>
           </li>
           <li>
-            <Link to="/about" className="menu__slide--list">
+            <a href="/#about" className="menu__slide--list">
               <FontAwesomeIcon
                 icon={faUser}
                 className={
@@ -128,10 +128,10 @@ const Nav = () => {
                 }
                 title="About"
               />
-            </Link>
+            </a>
           </li>
           <li>
-            <Link to="/skills" className="menu__slide--list">
+            <a href="/#skills" className="menu__slide--list">
               <FontAwesomeIcon
                 icon={faScrewdriverWrench}
                 className={
@@ -141,10 +141,10 @@ const Nav = () => {
                 }
                 title="Skills"
               />
-            </Link>
+            </a>
           </li>
           <li>
-            <Link to="/projects" className="menu__slide--list">
+            <a href="/#projects" className="menu__slide--list">
               <FontAwesomeIcon
                 icon={faPanorama}
                 className={
@@ -154,10 +154,10 @@ const Nav = () => {
                 }
                 title="Projects"
               />
-            </Link>
+            </a>
           </li>
           <li>
-            <Link to="/contact" className="menu__slide--list">
+            <a href="/#contact" className="menu__slide--list">
               <FontAwesomeIcon
                 icon={faEnvelopeOpen}
                 className={
@@ -167,7 +167,7 @@ const Nav = () => {
                 }
                 title="Contact"
               />
-            </Link>
+            </a>
           </li>
         </ul>
       </div>

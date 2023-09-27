@@ -1,137 +1,137 @@
 .dark {
-  background-color: $black;
+  background-color: $darkOlive;
   .theme__toggle {
-    color: $yellowOrange;
+    color: $lightOlive;
     &--container {
-      border: 1px solid $yellowOrange;
+      border: 1px solid $lightOlive;
       &:focus-visible {
-        outline-color: $yellowOrange;
+        outline-color: $lightOlive;
       }
     }
   }
 
   .menu__main {
     &--item {
-      color: $white;
+      color: $darkCream;
     }
     &--icon,
     &--active {
-      color: $white;
-      background-color: $darkGrey;
+      color: $darkCream;
+      background-color: $lightOlive;
     }
   }
   .menu__main--list:hover .menu__main--item,
   .menu__main--list:focus-visible .menu__main--item {
-    background-color: $yellowOrange;
+    background-color: $darkYellow;
   }
   .menu__main--list:hover .menu__main--icon,
   .menu__main--list:focus-visible .menu__main--icon,
   .menu__main--active {
-    background-color: $yellowOrange;
+    background-color: $darkYellow;
   }
   .menu__slide {
     &--button {
-      color: $yellowOrange;
-      border: 2px solid $yellowOrange;
+      color: $darkYellow;
+      border: 2px solid $darkYellow;
       &:hover,
       &:focus-visible {
-        background-color: $yellowOrange;
-        color: $white;
+        background-color: $darkYellow;
+        color: $darkCream;
       }
     }
     &--icon,
     &--active {
-      color: $white;
-      background-color: $lightGrey;
+      color: $darkCream;
+      background-color: $lightOlive;
     }
   }
   .menu__slide--list:hover .menu__slide--icon,
   .menu__slide--list:focus-visible .menu__slide--icon,
   .menu__slide--active {
-    background-color: $yellowOrange;
+    background-color: $darkYellow;
   }
 
   .section__heading {
-    color: $white;
+    color: $darkCream;
     span {
-      color: $yellowOrange;
+      color: $lightOlive;
     }
     &--bg {
-      color: rgba($color: $white, $alpha: 0.1);
+      color: rgba($color: $darkCream, $alpha: 0.1);
     }
   }
 
   .home__container {
     .heading__greeting {
-      color: $yellowOrange;
+      color: $lightOlive;
     }
     .heading__name {
-      color: $yellowOrange;
+      color: $lightOlive;
     }
     .heading__occupation {
-      color: $lightGrey;
+      color: $darkYellow;
     }
     .heading__intro {
-      color: $white;
+      color: $darkCream;
     }
   }
   .heading__button {
-    border: 2px solid $yellowOrange;
+    border: 2px solid $lightOlive;
     &:before {
-      background-color: $yellowOrange;
+      background-color: $lightOlive;
     }
     &--text {
-      color: $white;
+      color: $darkCream;
     }
     &--icon {
-      color: $white;
-      background-color: $yellowOrange;
+      color: $darkCream;
+      background-color: $lightOlive;
     }
   }
 
   // .about__pic--container {
   //   img {
-  //     box-shadow: 0 0 10px $yellowOrange;
+  //     box-shadow: 0 0 10px $lightOlive;
   //   }
   // }
   .about__text--container {
     h3 {
-      color: $yellowOrange;
+      color: $lightOlive;
     }
     p {
-      color: $white;
+      color: $darkCream;
     }
     i {
-      color: $yellowOrange;
+      color: $lightOlive;
     }
   }
 
   .skills__list--tech {
     li {
-      color: $white;
+      color: $darkCream;
       .icon__container {
-        color: $yellowOrange;
+        color: $lightOlive;
       }
     }
     .upcoming__skill--text {
-      color: $yellowOrange;
+      color: $lightOlive;
     }
   }
 
   .carousel__button--arrows {
-    color: $yellowOrange;
-    // filter: drop-shadow(0px 4px 1px rgba($color: $yellowOrange, $alpha: 0.3));
+    color: $lightOlive;
+    // filter: drop-shadow(0px 4px 1px rgba($color: $lightOlive, $alpha: 0.3));
   }
   .projects__list {
     // &--pic {
     //   img {
-    //     box-shadow: 0 0 10px $yellowOrange;
+    //     box-shadow: 0 0 10px $lightOlive;
     //   }
     // }
     &--title {
       h3 {
-        color: $yellowOrange;
-        // text-shadow: 5px 5px 5px rgba($color: $white, $alpha: 0.3);
+        color: $lightOlive;
+        // text-shadow: 5px 5px 5px rgba($color: $darkCream, $alpha: 0.3);
       }
     }
   }
@@ -139,51 +139,51 @@
   .project__container {
     .project__title {
       h1 {
-        color: $yellowOrange;
-        // text-shadow: 5px 5px 5px rgba($color: $white, $alpha: 0.3);
+        color: $lightOlive;
+        // text-shadow: 5px 5px 5px rgba($color: $darkCream, $alpha: 0.3);
       }
     }
     // &--pic {
     //   img {
-    //     box-shadow: 0 0 15px $yellowOrange;
+    //     box-shadow: 0 0 15px $lightOlive;
     //   }
     // }
     .project__link--text {
-      color: $lightGrey;
+      color: $darkYellow;
     }
     .project__link--icon {
-      color: $yellowOrange;
+      color: $lightOlive;
     }
     .project__skill--list {
       .icon__container {
-        color: $yellowOrange;
+        color: $lightOlive;
       }
     }
     .project__description {
-      color: $white;
+      color: $darkCream;
       a {
-        color: $yellowOrange;
+        color: $lightOlive;
         &:hover,
         &:focus-visible {
-          text-shadow: 3px 3px 5px rgba($color: $white, $alpha: 0.3);
+          text-shadow: 3px 3px 5px rgba($color: $darkCream, $alpha: 0.3);
         }
       }
     }
   }
 
   .contact__container {
-    color: $white;
+    color: $darkCream;
     .contact__icon {
-      color: $yellowOrange;
+      color: $lightOlive;
     }
     &--left {
       h3 {
-        color: $yellowOrange;
+        color: $lightOlive;
       }
     }
     &--right {
       a {
-        color: $white;
+        color: $darkCream;
       }
     }
   }
@@ -191,26 +191,26 @@
   .ePage {
     .ePage__container {
       &--heading {
-        color: $yellowOrange;
+        color: $lightOlive;
       }
       &--text {
-        color: $white;
+        color: $darkCream;
       }
       &--button {
-        color: $white;
-        text-shadow: 1px 1px 1px $black;
-        background-color: $yellowOrange;
+        color: $darkCream;
+        text-shadow: 1px 1px 1px $darkOlive;
+        background-color: $lightOlive;
         box-shadow:
-          inset 2px 2px 3px rgba($color: $white, $alpha: 0.6),
-          inset -2px -2px 3px rgba($color: $black, $alpha: 0.6);
+          inset 2px 2px 3px rgba($color: $darkCream, $alpha: 0.6),
+          inset -2px -2px 3px rgba($color: $darkOlive, $alpha: 0.6);
         &:hover,
         &:focus-visible {
-          background-image: linear-gradient(to top left, rgba($color: $white, $alpha: 0.4), rgba($color: $white, $alpha: 0.2) 30%, rgba($color: $white, $alpha: 0));
+          background-image: linear-gradient(to top left, rgba($color: $darkCream, $alpha: 0.4), rgba($color: $darkCream, $alpha: 0.2) 30%, rgba($color: $darkCream, $alpha: 0));
         }
         &:active {
           box-shadow:
-            inset -3px -3px 3px rgba($color: $white, $alpha: 0.6),
-            inset 3px 3px 3px rgba($color: $black, $alpha: 0.6);
+            inset -3px -3px 3px rgba($color: $darkCream, $alpha: 0.6),
+            inset 3px 3px 3px rgba($color: $darkOlive, $alpha: 0.6);
         }
       }
     }
@@ -219,10 +219,10 @@
   .eData {
     .eData__container {
       &--heading {
-        color: $yellowOrange;
+        color: $lightOlive;
       }
       &--text {
-        color: $white;
+        color: $darkCream;
       }
     }
   }
@@ -230,7 +230,7 @@
   .footer {
     border-color: $darkGrey;
     p {
-      color: $white;
+      color: $darkCream;
     }
   }
 }

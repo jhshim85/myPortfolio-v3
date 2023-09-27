@@ -17,13 +17,32 @@ function App() {
     <ThemeProvider>
       <ScrollToTop />
       <Theme />
+      {/* <Home />
+      <About />
+      <Skills />
+      <Projects />
+      <Contact /> */}
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route
+          path="/"
+          element={
+            <>
+              <Home />
+              <main>
+                <About />
+                <Skills />
+                <Projects />
+                <Contact />
+              </main>
+            </>
+          }
+        />
+        {/* <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/skills" element={<Skills />} />
-        <Route path="/projects" element={<Projects />} />
+        <Route path="/projects" element={<Projects />} /> */}
         <Route path="/projects/:projectName" element={<ProjectDetails />} />
-        <Route path="/contact" element={<Contact />} />
+        {/* <Route path="/contact" element={<Contact />} /> */}
         <Route path="*" element={<ErrorPage />} />
       </Routes>
       <Footer />

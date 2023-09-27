@@ -5,13 +5,13 @@ export { ThemeContext };
 
 const ThemeProvider = ({children}) => {
 
-  const [theme, setTheme] = useState("dark");
+  const [theme, setTheme] = useState("light");
   
   const toggleTheme = () => {
     setTheme((current) =>
-      current === "dark"
-        ? "light"
-        : "dark"
+      current === "light"
+        ? "dark"
+        : "light"
     );
   };
   

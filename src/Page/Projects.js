@@ -61,10 +61,15 @@ const Projects = () => {
   }
 
   return (
-    <main className="projects">
+    <section className="projects">
+      <span id="projects" className="sr-only link">
+        Link to Projects
+      </span>
       <div className="wrapper">
-        <h1 className="section__heading">My <span>Projects</span></h1>
-        <h2 className="section__heading--bg">Projects</h2>
+        <h2 className="section__heading">
+          My <span>Projects</span>
+        </h2>
+        <span className="section__heading--bg">Projects</span>
         <div className="projects__container">
           <Carousel
             {...settings}
@@ -96,15 +101,15 @@ const Projects = () => {
                 borderRadius: "50%",
                 width: "10px",
                 height: "10px",
-                backgroundColor: "#666",
+                backgroundColor: "#2b2a2a",
               };
               const style =
                 isSelected && theme === "dark"
-                  ? { ...defStyle, backgroundColor: "#ffb400" }
+                  ? { ...defStyle, backgroundColor: "#CBC737" }
                   : isSelected && theme === "light"
-                  ? { ...defStyle, backgroundColor: "#72b626" }
+                  ? { ...defStyle, backgroundColor: "#800000" }
                   : !isSelected && theme === "light"
-                  ? { ...defStyle, backgroundColor: "#2b2a2a" }
+                  ? { ...defStyle, backgroundColor: "#708090" }
                   : { ...defStyle };
               return (
                 <div
@@ -121,11 +126,9 @@ const Projects = () => {
               );
             }}
           >
-            {
-              loading
-              ?
-              <LoaderProjects/>
-              :
+            {loading ? (
+              <LoaderProjects />
+            ) : (
               projects.map((item) => {
                 return (
                   <div className="projects__list" key={item.id}>
@@ -140,11 +143,11 @@ const Projects = () => {
                   </div>
                 );
               })
-            }
+            )}
           </Carousel>
         </div>
       </div>
-    </main>
+    </section>
   );
 };
 

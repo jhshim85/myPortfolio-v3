@@ -44,15 +44,18 @@ const About = () => {
   }
 
   return (
-    <main className="about">
+    <section className="about">
+      <span id="about" className="sr-only link">
+        Link to About
+      </span>
       <div className="wrapper">
-        <h1 className="section__heading">About <span>Me</span></h1>
-        <h2 className="section__heading--bg">About</h2>
-        {
-          loading
-          ?
-          <LoaderAbout/>
-          :
+        <h2 className="section__heading">
+          About <span>Me</span>
+        </h2>
+        <span className="section__heading--bg">About</span>
+        {loading ? (
+          <LoaderAbout />
+        ) : (
           about.map((item) => {
             return (
               <div className="about__container" key={item.id}>
@@ -63,12 +66,12 @@ const About = () => {
                   {documentToReactComponents(item.content)}
                 </div>
               </div>
-            )
+            );
           })
-        }
+        )}
       </div>
-    </main>
-  )
+    </section>
+  );
 }
 
 export default About;

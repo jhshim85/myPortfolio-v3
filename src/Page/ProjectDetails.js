@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom"
+import { useParams, Link } from "react-router-dom"
 import Client from "../util/useContentful";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import { INLINES } from "@contentful/rich-text-types";
@@ -67,7 +67,7 @@ const ProjectDetails = () => {
       }
     };
     getProject();
-  }, []);
+  }, [urlData.projectName]);
 
   const renderOptions = {
     renderNode: {
@@ -85,11 +85,9 @@ const ProjectDetails = () => {
 
   return (
     <main className="project">
-      {
-        loading
-        ?
-        <LoaderProjectDetails/>
-        :
+      {loading ? (
+        <LoaderProjectDetails />
+      ) : (
         project.map((item) => {
           return (
             <div className="project__container wrapper" key={item.id}>
@@ -112,21 +110,18 @@ const ProjectDetails = () => {
                         <FaLink className="project__link--icon" />
                       </a>
                     </li>
-                    {
-                    item.githubRepo
-                    ?
-                    <li className="project__link--container">
-                      <p className="project__link--text">Github repo: </p>
-                      <a
-                        href={item.githubRepo}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <FaGithub className="project__link--icon" />
-                      </a>
-                    </li>
-                    : null
-                    }
+                    {item.githubRepo ? (
+                      <li className="project__link--container">
+                        <p className="project__link--text">Github repo: </p>
+                        <a
+                          href={item.githubRepo}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <FaGithub className="project__link--icon" />
+                        </a>
+                      </li>
+                    ) : null}
                   </ul>
                 </div>
                 <div className="project__skill">
@@ -179,7 +174,7 @@ const ProjectDetails = () => {
             </div>
           );
         })
-      }
+      )}
     </main>
   );
 }

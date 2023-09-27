@@ -10,7 +10,7 @@ const Theme = () => {
   return (
     <nav>
       <div className="theme__toggle">
-        <FaMoon className="theme__toggle--icon" />
+        <FaSun className="theme__toggle--icon" />
         <div
           className="theme__toggle--container"
           tabIndex="0"
@@ -19,7 +19,7 @@ const Theme = () => {
         >
           <FaCircleHalfStroke className="theme__toggle--notch" />
         </div>
-        <FaSun className="theme__toggle--icon" />
+        <FaMoon className="theme__toggle--icon" />
       </div>
       <Nav />
     </nav>
