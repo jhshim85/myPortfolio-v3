@@ -1,0 +1,48 @@
+html {
+  font-size: 125%;
+  font-style: normal;
+  font-weight: 600;
+}
+
+body {
+  font-family: 'Cormorant Garamond', serif, sans-serif;
+  -ms-overflow-style: none;
+  /* for Internet Explorer, Edge */
+  scrollbar-width: none;
+  /* for Firefox */
+  overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+  /* for Chrome, Safari, and Opera */
+}
+
+.page__theme {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease-in-out;
+}
+
+main {
+  flex-grow: 1;
+}
+
+ul,
+li,
+a {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}

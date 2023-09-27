@@ -1,0 +1,63 @@
+.contact {
+  text-align: center;
+  position: relative;
+}
+
+.contact__container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  .contact__icon {
+    font-size: 1.5rem;
+  }
+  &--left {
+    text-align: left;
+    flex: 1 0 calc(50% - 50px);
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    h3 {
+      text-transform: uppercase;
+      font-size: 1.5rem;
+      letter-spacing: 0.2rem;
+      margin: 0;
+    }
+    p {
+      margin: 0;
+      font-size: 1.1rem;
+      letter-spacing: 0.05rem;
+      line-height: 2rem;
+    }
+    address {
+      display: flex;
+      gap: 20px;
+    }
+  }
+  &--right {
+    align-self: center;
+    text-align: center;
+    flex: 1 0 calc(45% - 50px);
+    ul {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 70px 0;
+    }
+    a {
+      outline: none;
+      text-transform: none;
+      transition: all 0.3s ease-in-out;
+      .contact__icon {
+        font-size: 2.5rem;
+      }
+      &:hover,
+      &:focus {
+        transform: scale(1.2);
+      }
+      p {
+        font-size: 1.1rem;
+      }
+    }
+  }
+}

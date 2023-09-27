@@ -1,0 +1,36 @@
+.about {
+  text-align: center;
+  position: relative;
+}
+
+.about__container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 50px;
+  .about__pic--container {
+    flex: 1 0 calc(40% - 50px);
+    max-width: 400px;
+    align-self: center;
+    img {
+      border-radius: 30px;
+    }
+  }
+  .about__text--container {
+    flex: 1 0 calc(50% - 50px);
+    text-align: left;
+    align-self: center;
+    h3 {
+      font-size: 1.25rem;
+      letter-spacing: 0.09rem;
+    }
+    p {
+      font-size: 1.05rem;
+      letter-spacing: 0.09rem;
+      line-height: 1.8rem;
+    }
+    i {
+      font-weight: 800;
+    }
+  }
+}

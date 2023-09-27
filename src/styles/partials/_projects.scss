@@ -1,0 +1,58 @@
+.projects {
+  text-align: center;
+  position: relative;
+}
+
+.carousel__button {
+  position: absolute;
+  top: calc(50% - 3rem);
+  // z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &--left {
+    left: 0;
+  }
+  &--right {
+    right: 0;
+  }
+  &--arrows {
+    font-size: 2rem;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+    top: 0px;
+    &:active {
+      filter: none;
+      top: 5px;
+    }
+  }
+}
+
+.projects__container {
+  margin: 50px;
+  .projects__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 30px 50px;
+    &--pic {
+      margin: 0 20px;
+      display: flex;
+      justify-content: center;
+      img {
+        border-radius: 30px;
+        object-position: top;
+        width: 100%;
+        aspect-ratio: 21 / 9;
+      }
+    }
+    &--title {
+      align-self: center;
+      width: 90%;
+      h3 {
+        text-transform: capitalize;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
